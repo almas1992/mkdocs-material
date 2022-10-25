@@ -1,4 +1,4 @@
-FROM --platform=$TARGETPLATFORM python:3.11.0rc2-alpine3.16
+FROM --platform=$TARGETPLATFORM python:3.11.0-alpine3.16
 
 
 LABEL maintainer="ALMAS <almas1992@126.com>"
