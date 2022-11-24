@@ -6,7 +6,8 @@ LABEL maintainer="ALMAS <almas1992@126.com>"
 # Copy files necessary installation
 COPY requirements.txt requirements.txt
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apk --no-cache add git \
+    && pip install --no-cache-dir -r requirements.txt
 
 # Set working directory
 WORKDIR /docs
